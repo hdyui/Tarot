@@ -455,3 +455,10 @@ fieldset { border: 0; padding: 0; margin: 0 0 22px; min-width: 0; }
 body { overflow-x: hidden; }
 .nav a.btn, .nav a.btn[aria-current="page"] { color: var(--navy); }
 .oracle > input[type="radio"] { position: fixed; top: 50%; left: 0; width: 1px; height: 1px; }
+/* Seraphine for all display headings */
+h1, h2, h3, .cal-head, .slot-time, .summary .total dd, .quote { font-family: var(--display); font-weight: 400; letter-spacing: .04em; line-height: 1.2; }
+h1 { letter-spacing: .05em; }
+.hero h1 { font-style: normal; letter-spacing: .03em; }
+summary { font-family: var(--display); font-weight: 400; letter-spacing: .03em; font-size: 1.3rem; }
+.meaning h3 { letter-spacing: .02em; }
+.hero h1 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); max-width: 18ch; } h3 { font-size: clamp(1.35rem, 2.2vw, 1.6rem); }
