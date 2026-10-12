@@ -452,7 +452,7 @@ fieldset { border: 0; padding: 0; margin: 0 0 22px; min-width: 0; }
 .svc .thumb img:only-child { width: 30%; }
 .hero-grid > * { min-width: 0; }
 @media (max-width: 860px) { .hero-grid { grid-template-columns: minmax(0, 1fr); } }
-body { overflow-x: hidden; }
+body { overflow-x: clip; }
 .nav a.btn, .nav a.btn[aria-current="page"] { color: var(--navy); }
 .oracle > input[type="radio"] { position: fixed; top: 50%; left: 0; width: 1px; height: 1px; }
 /* Seraphine for all display headings */
@@ -462,3 +462,17 @@ h1 { letter-spacing: .05em; }
 summary { font-family: var(--display); font-weight: 400; letter-spacing: .03em; font-size: 1.3rem; }
 .meaning h3 { letter-spacing: .02em; }
 .hero h1 { font-size: clamp(1.7rem, 3.4vw, 2.5rem); max-width: 18ch; } h3 { font-size: clamp(1.35rem, 2.2vw, 1.6rem); }
+
+/* Smooth mobile scrolling: drop the expensive effects on touch / small screens */
+@media (max-width: 960px), (hover: none) {
+  .site-header { backdrop-filter: none; -webkit-backdrop-filter: none; background: var(--navy); }
+  .rv { animation: none !important; opacity: 1 !important; transform: none !important; }
+  .hero-visual .ring, .hero-visual .tc, .portrait .ring, .cta-band::before, .confirm .seal { animation: none !important; }
+  .hero::before { display: none; }
+  .hero .brand-display { text-shadow: none; }
+  .svc .thumb img, .tcard .in > img, .fan .tc, .portrait .tc, .mini-cards img, .lib img, .preview-card, .panel-box { filter: none; box-shadow: none; }
+  .tcard .in > img { box-shadow: 0 8px 14px -8px #000; }
+  .step:hover, .svc:hover, .lib article:hover, .post:hover, .slot-opt label:hover { transform: none; }
+  body { background-image: none; }
+  .spread-zone::before { display: none; }
+}
