@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Book a Reading — ASTRA</title>
+<meta name="description" content="Reserve a personal Tarot reading with ASTRA.">
+<meta name="theme-color" content="#10131F">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500&display=swap&subset=vietnamese" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="ASTRA — home"><img src="assets/logo.svg" alt=""><span>ASTRA</span></a>
+    <input type="checkbox" id="menu" class="menu-toggle" aria-label="Toggle menu">
+    <label for="menu" class="burger" aria-hidden="true"><i></i></label>
+    <nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="time-oracle.html">Time Oracle</a><a href="readings.html">Readings</a><a href="about.html">About</a><a href="journal.html">Journal</a><a class="btn no-arrow" href="booking.html" aria-current="page">Book a Reading</a></nav>
+  </div>
+</header>
+<main>
+<section class="page-head"><div class="wrap">
+  <p class="eyebrow">Book a Reading</p><h1>Reserve Your Hour</h1><p class="lead">Confirm your reading, your time and your details.</p>
+  <div class="ornament"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></div>
+</div></section>
+<section class="section book-wrap" style="padding-top:24px"><div class="wrap">
+<div class="book">
+  <form class="form-card rv" action="booking.html#confirmed" method="get">
+    <fieldset class="fld"><legend class="l">Selected Reading <span class="req">*</span></legend>
+      <select name="reading" required aria-label="Selected reading">
+        <option value="">Choose a reading…</option>
+        <option selected>Single Question — 30 min · 90K</option><option>Single Question — 45 min · 120K</option><option>Single Question + Oracle · 120K</option>
+        <option>Overview 3 months + Oracle · 90K</option><option>Overview 3 months + 2 quick questions · 120K</option><option>Quick Question · 35K</option>
+      </select><span class="err">Please choose a reading.</span></fieldset>
+    <div class="row2">
+      <div class="fld"><label class="l" for="date">Date <span class="req">*</span></label><input type="date" id="date" name="date" value="2026-10-14" min="2026-10-12" required><span class="err">Please choose a date.</span></div>
+      <div class="fld"><label class="l" for="time">Time <span class="req">*</span></label>
+        <select id="time" name="time" required><option value="">Choose a time…</option><option selected>10:00 · Clarity</option><option>08:00 · Dawn</option><option>20:00 · Reflection</option><option>22:30 · Dream</option><option disabled>13:00 · Balance — booked</option><option disabled>17:00 · Transition — booked</option></select><span class="err">Please choose an available time.</span></div>
+    </div>
+    <fieldset><legend class="l">Session Type <span class="req">*</span></legend>
+      <div class="opts"><div class="opt"><input type="radio" name="mode" id="m1" value="online" checked required><label for="m1">Online</label></div><div class="opt"><input type="radio" name="mode" id="m2" value="in-person"><label for="m2">In person</label></div></div></fieldset>
+    <div class="row2">
+      <div class="fld"><label class="l" for="name">Full Name <span class="req">*</span></label><input type="text" id="name" name="name" required autocomplete="name" placeholder="Your name"><span class="err">Please enter your name.</span></div>
+      <div class="fld"><label class="l" for="email">Email Address <span class="req">*</span></label><input type="email" id="email" name="email" required autocomplete="email" placeholder="you@example.com"><span class="err">Please enter a valid email.</span></div>
+    </div>
+    <div class="fld"><label class="l" for="phone">Phone Number</label><input type="tel" id="phone" name="phone" autocomplete="tel" placeholder="Optional"></div>
+    <div class="fld"><label class="l" for="topic">Reading Topic</label><textarea id="topic" name="topic" placeholder="Optional — you never have to share anything sensitive."></textarea><p class="help">You may leave this blank or skip any question you would rather keep private.</p></div>
+    <button class="btn" type="submit">Confirm Booking</button>
+    <p class="help" style="margin-top:16px">Demo only — no real booking is made, no email is sent and no payment is taken.</p>
+  </form>
+
+  <aside class="summary rv" aria-label="Booking summary">
+    <span class="badge-demo">Example only</span>
+    <h2 style="margin-top:16px">Booking Summary</h2>
+    <dl>
+      <div><dt>Reading</dt><dd>Single Question</dd></div>
+      <div><dt>Date</dt><dd>14 October 2026</dd></div>
+      <div><dt>Time</dt><dd>10:00 · Clarity</dd></div>
+      <div><dt>Duration</dt><dd>30 minutes</dd></div>
+      <div><dt>Format</dt><dd>Online</dd></div>
+      <div class="total"><dt>Total</dt><dd>90K VND</dd></div>
+    </dl>
+    <p class="pos" style="text-align:center">Your Three-Card Spread</p>
+    <div class="mini-cards"><img src="assets/card-star.svg" alt="The Star"><img src="assets/card-moon.svg" alt="The Moon"><img src="assets/card-sun.svg" alt="The Sun"></div>
+  </aside>
+</div>
+
+<div class="confirm" id="confirmed" role="status">
+  <img class="seal" src="assets/logo.svg" alt="">
+  <span class="badge-demo">Demo confirmation</span>
+  <h2 style="margin-top:20px">Your Reading Is Reserved</h2>
+  <p class="lead">Thank you for booking with ASTRA. In this demo no appointment has actually been saved and no email has been sent — with a real back end, your details would appear here.</p>
+  <div class="btn-row" style="justify-content:center"><a class="btn" href="index.html">Back to Home</a><a class="btn ghost" href="booking.html">Make Another Booking</a></div>
+</div>
+</div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="logo" href="index.html"><img src="assets/logo.svg" alt=""><span>ASTRA</span></a>
+        <p>Tarot by Time. A quiet space to pause, draw three cards and reflect before your personal reading.</p>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="time-oracle.html">Time Oracle</a></li><li><a href="library.html">Tarot Library</a></li><li><a href="readings.html">Readings</a></li><li><a href="journal.html">Journal</a></li></ul></div>
+      <div><h4>Reader</h4><ul><li><a href="about.html">About the Reader</a></li><li><a href="booking.html">Book a Reading</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>[Your email]</li><li>[Your social handle]</li><li>[Your location]</li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 ASTRA — Tarot by Time · Demo project</span><span>Tarot is offered for reflection and entertainment, not as professional advice.</span></div>
+  </div>
+</footer>
+</body>
+</html>

@@ -1,0 +1,62 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — ASTRA</title>
+<meta name="description" content="Contact ASTRA with questions about readings or bookings.">
+<meta name="theme-color" content="#10131F">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500&display=swap&subset=vietnamese" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="ASTRA — home"><img src="assets/logo.svg" alt=""><span>ASTRA</span></a>
+    <input type="checkbox" id="menu" class="menu-toggle" aria-label="Toggle menu">
+    <label for="menu" class="burger" aria-hidden="true"><i></i></label>
+    <nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="time-oracle.html">Time Oracle</a><a href="readings.html">Readings</a><a href="about.html">About</a><a href="journal.html">Journal</a><a class="btn no-arrow" href="booking.html">Book a Reading</a></nav>
+  </div>
+</header>
+<main>
+<section class="page-head"><div class="wrap">
+  <p class="eyebrow">Contact</p><h1>Say Hello</h1><p class="lead">Questions about a reading, changing a time or anything else — leave a message.</p>
+  <div class="ornament"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></div>
+</div></section>
+<section class="section book-wrap" style="padding-top:24px"><div class="wrap"><div class="contact">
+  <div class="rv">
+    <h2>Get in touch</h2>
+    <p class="lead">Contact details below are placeholders and will be replaced with verified information before launch.</p>
+    <ul class="info-list"><li><small>Email</small>[Your email]</li><li><small>Social</small>[Your social handle]</li><li><small>Location</small>[Your location / online]</li><li><small>Hours</small>[Reader’s working hours]</li></ul>
+  </div>
+  <form class="form-card rv" action="contact.html#sent" method="get">
+    <div class="fld"><label class="l" for="cn">Full Name <span class="req">*</span></label><input type="text" id="cn" name="name" required><span class="err">Please enter your name.</span></div>
+    <div class="fld"><label class="l" for="ce">Email Address <span class="req">*</span></label><input type="email" id="ce" name="email" required><span class="err">Please enter a valid email.</span></div>
+    <div class="fld"><label class="l" for="cm">Message <span class="req">*</span></label><textarea id="cm" name="message" required maxlength="1000"></textarea><span class="err">Please write a short message.</span></div>
+    <button class="btn" type="submit">Send Message</button>
+    <p class="help" style="margin-top:16px">Demo form — messages are not actually sent.</p>
+  </form>
+</div>
+<div class="confirm" id="sent" role="status"><span class="badge-demo">Demo message</span><h2 style="margin-top:20px">Message Received</h2><p class="lead">Thank you. In this demo nothing is actually sent — with a real back end, the reader would reply by email.</p><div class="btn-row" style="justify-content:center"><a class="btn" href="index.html">Back to Home</a></div></div>
+</div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="logo" href="index.html"><img src="assets/logo.svg" alt=""><span>ASTRA</span></a>
+        <p>Tarot by Time. A quiet space to pause, draw three cards and reflect before your personal reading.</p>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="time-oracle.html">Time Oracle</a></li><li><a href="library.html">Tarot Library</a></li><li><a href="readings.html">Readings</a></li><li><a href="journal.html">Journal</a></li></ul></div>
+      <div><h4>Reader</h4><ul><li><a href="about.html">About the Reader</a></li><li><a href="booking.html">Book a Reading</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>[Your email]</li><li>[Your social handle]</li><li>[Your location]</li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 ASTRA — Tarot by Time · Demo project</span><span>Tarot is offered for reflection and entertainment, not as professional advice.</span></div>
+  </div>
+</footer>
+</body>
+</html>

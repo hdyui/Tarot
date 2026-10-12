@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B2136"/><stop offset="1" stop-color="#10131F"/></linearGradient></defs>
+<rect width="200" height="300" rx="12" fill="url(#g)"/>
+<rect x="8" y="8" width="184" height="284" rx="8" fill="none" stroke="#D6C6A3" stroke-width="1.5"/>
+<rect x="15" y="15" width="170" height="270" rx="5" fill="none" stroke="#D6C6A3" stroke-width=".6" opacity=".6"/>
+<circle cx="100" cy="150" r="30" fill="none" stroke="#D6C6A3" stroke-width="2.5"/>
+<line x1="100" y1="180" x2="100" y2="228" stroke="#D6C6A3" stroke-width="2.5"/><line x1="82" y1="206" x2="118" y2="206" stroke="#D6C6A3" stroke-width="2.5"/>
+<path d="M62 92 L76 110 L88 84 L100 106 L112 84 L124 110 L138 92 L134 122 H66z" fill="none" stroke="#D6C6A3" stroke-width="2" stroke-linejoin="round"/>
+<polygon points="100.0,140.0 102.1,147.9 110.0,150.0 102.1,152.1 100.0,160.0 97.9,152.1 90.0,150.0 97.9,147.9" fill="#D6C6A3"/>
+<path d="M34 250 q0 -50 20 -80 M166 250 q0 -50 -20 -80" fill="none" stroke="#48536A" stroke-width="2"/>
+<polygon points="100.0,23.0 101.2,28.8 107.0,30.0 101.2,31.2 100.0,37.0 98.8,31.2 93.0,30.0 98.8,28.8" fill="#D6C6A3"/><polygon points="100.0,263.0 101.2,268.8 107.0,270.0 101.2,271.2 100.0,277.0 98.8,271.2 93.0,270.0 98.8,268.8" fill="#D6C6A3"/>
+</svg>

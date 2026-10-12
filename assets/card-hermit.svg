@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 300">
+<defs><linearGradient id="g" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#1B2136"/><stop offset="1" stop-color="#10131F"/></linearGradient></defs>
+<rect width="200" height="300" rx="12" fill="url(#g)"/>
+<rect x="8" y="8" width="184" height="284" rx="8" fill="none" stroke="#D6C6A3" stroke-width="1.5"/>
+<rect x="15" y="15" width="170" height="270" rx="5" fill="none" stroke="#D6C6A3" stroke-width=".6" opacity=".6"/>
+<path d="M20 250 L80 150 L110 200 L140 160 L180 250z" fill="none" stroke="#48536A" stroke-width="2"/>
+<rect x="84" y="88" width="32" height="44" rx="4" fill="none" stroke="#D6C6A3" stroke-width="2"/>
+<path d="M92 88 L100 74 L108 88" fill="none" stroke="#D6C6A3" stroke-width="2"/>
+<polygon points="100.0,100.0 102.1,107.9 110.0,110.0 102.1,112.1 100.0,120.0 97.9,112.1 90.0,110.0 97.9,107.9" fill="#D6C6A3"/>
+<line x1="126.0" y1="110.0" x2="140.0" y2="110.0" stroke="#D6C6A3" stroke-width="1" stroke-linecap="round"/><line x1="121.0" y1="125.3" x2="132.4" y2="133.5" stroke="#D6C6A3" stroke-width="1" stroke-linecap="round"/><line x1="108.0" y1="134.7" x2="112.4" y2="148.0" stroke="#D6C6A3" stroke-width="1" stroke-linecap="round"/><line x1="92.0" y1="134.7" x2="87.6" y2="148.0" stroke="#D6C6A3" stroke-width="1" stroke-linecap="round"/><line x1="79.0" y1="125.3" x2="67.6" y2="133.5" stroke="#D6C6A3" stroke-width="1" stroke-linecap="round"/><line x1="74.0" y1="110.0" x2="60.0" y2="110.0" stroke="#D6C6A3" stroke-width="1" stroke-linecap="round"/><line x1="79.0" y1="94.7" x2="67.6" y2="86.5" stroke="#D6C6A3" stroke-width="1" stroke-linecap="round"/><line x1="92.0" y1="85.3" x2="87.6" y2="72.0" stroke="#D6C6A3" stroke-width="1" stroke-linecap="round"/><line x1="108.0" y1="85.3" x2="112.4" y2="72.0" stroke="#D6C6A3" stroke-width="1" stroke-linecap="round"/><line x1="121.0" y1="94.7" x2="132.4" y2="86.5" stroke="#D6C6A3" stroke-width="1" stroke-linecap="round"/>
+<line x1="150" y1="120" x2="150" y2="240" stroke="#D6C6A3" stroke-width="2.5" stroke-linecap="round"/>
+<circle cx="150" cy="116" r="5" fill="none" stroke="#D6C6A3" stroke-width="2"/>
+<polygon points="100.0,23.0 101.2,28.8 107.0,30.0 101.2,31.2 100.0,37.0 98.8,31.2 93.0,30.0 98.8,28.8" fill="#D6C6A3"/><polygon points="100.0,263.0 101.2,268.8 107.0,270.0 101.2,271.2 100.0,277.0 98.8,271.2 93.0,270.0 98.8,268.8" fill="#D6C6A3"/>
+</svg>

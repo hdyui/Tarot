@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Time Oracle — ASTRA</title>
+<meta name="description" content="Select a date, find an available hour and reveal a three-card Tarot spread.">
+<meta name="theme-color" content="#10131F">
+<link rel="icon" href="assets/logo.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500&display=swap&subset=vietnamese" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="ASTRA — home"><img src="assets/logo.svg" alt=""><span>ASTRA</span></a>
+    <input type="checkbox" id="menu" class="menu-toggle" aria-label="Toggle menu">
+    <label for="menu" class="burger" aria-hidden="true"><i></i></label>
+    <nav class="nav" aria-label="Main"><a href="index.html">Home</a><a href="time-oracle.html" aria-current="page">Time Oracle</a><a href="readings.html">Readings</a><a href="about.html">About</a><a href="journal.html">Journal</a><a class="btn no-arrow" href="booking.html">Book a Reading</a></nav>
+  </div>
+</header>
+<main>
+<section class="page-head"><div class="wrap">
+  <p class="eyebrow">Time Oracle</p><h1>Find Your Hour</h1><p class="lead">Choose a date and explore the available times for your reading.</p><p class="micro">Time themes are symbolic prompts for reflection; availability is based on the reader’s real calendar.</p>
+  <div class="ornament"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 0l2.6 9.4L24 12l-9.4 2.6L12 24l-2.6-9.4L0 12l9.4-2.6z"/></svg></div>
+</div></section>
+<section class="section" style="padding-top:24px"><div class="wrap">
+<div class="oracle">
+  <input type="radio" name="draw" id="da0" checked><input type="radio" name="draw" id="da1"><input type="radio" name="draw" id="db0"><input type="radio" name="draw" id="db1">
+  <div class="oracle-grid">
+    <div class="panel-box rv">
+      <h2><small>01</small> Select a Date</h2>
+      <div class="cal-head">October 2026 <span>Indochina Time (GMT+7)</span></div>
+      <div class="cal"><div class="dow">Mo</div><div class="dow">Tu</div><div class="dow">We</div><div class="dow">Th</div><div class="dow">Fr</div><div class="dow">Sa</div><div class="dow">Su</div><div></div><div></div><div></div><div class="day"><span class="off" aria-label="October 1, past date">1</span></div><div class="day"><span class="off" aria-label="October 2, past date">2</span></div><div class="day"><span class="off" aria-label="October 3, past date">3</span></div><div class="day"><span class="off" aria-label="October 4, past date">4</span></div><div class="day"><span class="off" aria-label="October 5, past date">5</span></div><div class="day"><span class="off" aria-label="October 6, past date">6</span></div><div class="day"><span class="off" aria-label="October 7, past date">7</span></div><div class="day"><span class="off" aria-label="October 8, past date">8</span></div><div class="day"><span class="off" aria-label="October 9, past date">9</span></div><div class="day"><span class="off" aria-label="October 10, past date">10</span></div><div class="day"><span class="off" aria-label="October 11, past date">11</span></div><div class="day"><input type="radio" name="date" id="d12"><label for="d12" aria-label="October 12">12</label></div><div class="day"><input type="radio" name="date" id="d13"><label for="d13" aria-label="October 13">13</label></div><div class="day"><input type="radio" name="date" id="d14" checked><label for="d14" aria-label="October 14">14</label></div><div class="day"><input type="radio" name="date" id="d15"><label for="d15" aria-label="October 15">15</label></div><div class="day"><input type="radio" name="date" id="d16"><label for="d16" aria-label="October 16">16</label></div><div class="day"><input type="radio" name="date" id="d17"><label for="d17" aria-label="October 17">17</label></div><div class="day"><span class="off closed" aria-label="October 18, closed">18</span></div><div class="day"><input type="radio" name="date" id="d19"><label for="d19" aria-label="October 19">19</label></div><div class="day"><input type="radio" name="date" id="d20"><label for="d20" aria-label="October 20">20</label></div><div class="day"><input type="radio" name="date" id="d21"><label for="d21" aria-label="October 21">21</label></div><div class="day"><input type="radio" name="date" id="d22"><label for="d22" aria-label="October 22">22</label></div><div class="day"><input type="radio" name="date" id="d23"><label for="d23" aria-label="October 23">23</label></div><div class="day"><input type="radio" name="date" id="d24"><label for="d24" aria-label="October 24">24</label></div><div class="day"><span class="off closed" aria-label="October 25, closed">25</span></div><div class="day"><input type="radio" name="date" id="d26"><label for="d26" aria-label="October 26">26</label></div><div class="day"><input type="radio" name="date" id="d27"><label for="d27" aria-label="October 27">27</label></div><div class="day"><input type="radio" name="date" id="d28"><label for="d28" aria-label="October 28">28</label></div><div class="day"><input type="radio" name="date" id="d29"><label for="d29" aria-label="October 29">29</label></div><div class="day"><input type="radio" name="date" id="d30"><label for="d30" aria-label="October 30">30</label></div><div class="day"><input type="radio" name="date" id="d31"><label for="d31" aria-label="October 31">31</label></div></div>
+      <div class="legend"><span><i></i>Available</span><span><i class="l-off"></i>Past / closed</span></div>
+    </div>
+    <div class="panel-box rv">
+      <h2><small>02</small> Find Your Hour</h2>
+      <div class="slots" role="group" aria-label="Available times"><div class="slot-opt"><input type="radio" name="slot" id="t1"><label for="t1"><span class="slot-time">08:00</span><span class="slot-name">Dawn</span><span class="slot-state">Available</span></label></div><div class="slot-opt"><input type="radio" name="slot" id="t2"><label for="t2"><span class="slot-time">10:00</span><span class="slot-name">Clarity</span><span class="slot-state">Available</span></label></div><div class="slot-opt"><div class="booked" aria-disabled="true"><span class="slot-time">13:00</span><span class="slot-name">Balance</span><span class="slot-state">Booked</span></div></div><div class="slot-opt"><div class="booked" aria-disabled="true"><span class="slot-time">17:00</span><span class="slot-name">Transition</span><span class="slot-state">Booked</span></div></div><div class="slot-opt"><input type="radio" name="slot" id="t5"><label for="t5"><span class="slot-time">20:00</span><span class="slot-name">Reflection</span><span class="slot-state">Available</span></label></div><div class="slot-opt"><input type="radio" name="slot" id="t6"><label for="t6"><span class="slot-time">22:30</span><span class="slot-name">Dream</span><span class="slot-state">Available</span></label></div></div>
+      <p class="tz">Times shown in GMT+7. Booked hours cannot be selected.</p>
+      <div class="hour-panel" aria-live="polite">
+        <p class="empty">Choose an available time to begin your reading.</p>
+        <div class="theme th1"><span class="k">Theme of this hour · 06:00 – 09:00</span><h3>Dawn</h3><p class="msg">A quiet space for new beginnings.</p></div><div class="theme th2"><span class="k">Theme of this hour · 09:00 – 12:00</span><h3>Clarity</h3><p class="msg">Pause and look at the question from another angle.</p></div><div class="theme th3"><span class="k">Theme of this hour · 12:00 – 16:00</span><h3>Balance</h3><p class="msg">Explore what needs attention and balance.</p></div><div class="theme th5"><span class="k">Theme of this hour · 19:00 – 22:00</span><h3>Reflection</h3><p class="msg">Make room for a thoughtful moment.</p></div><div class="theme th6"><span class="k">Theme of this hour · 22:00 – 00:00</span><h3>Dream</h3><p class="msg">Explore feelings, imagination and intuition.</p></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="spread-zone rv">
+    <h2>Your Three-Card Spread</h2>
+    <p class="hint need-slot">Choose an available time above to unlock your spread.</p>
+    <p class="hint">Three cards, three positions. Reveal them one by one and read each as a prompt, not a prediction.</p>
+    <div class="spread sp-a"><div class="slot-card"><div class="pos">Card I · The Present</div><p class="pos-q">What deserves your attention right now?</p>
+<div class="tcard"><div class="in"><img src="assets/card-back.svg" alt="Face-down card, The Present"><img src="assets/card-star.svg" alt="The Star card"></div></div>
+<div class="meaning"><h3>The Star</h3><span class="kw">Hope · Renewal · Calm</span><p>A gentle card of healing and open-hearted direction. It invites you to notice what restores you and where quiet hope is already growing.</p></div></div><div class="slot-card"><div class="pos">Card II · The Hidden</div><p class="pos-q">What might be worth looking at more closely?</p>
+<div class="tcard"><div class="in"><img src="assets/card-back.svg" alt="Face-down card, The Hidden"><img src="assets/card-moon.svg" alt="The Moon card"></div></div>
+<div class="meaning"><h3>The Moon</h3><span class="kw">Intuition · Dreams · Unknown</span><p>The Moon asks you to move slowly and trust your inner signals. Not everything is clear yet, and that can be a space to explore feelings, not a cause for worry.</p></div></div><div class="slot-card"><div class="pos">Card III · The Possibility</div><p class="pos-q">What perspective could you explore next?</p>
+<div class="tcard"><div class="in"><img src="assets/card-back.svg" alt="Face-down card, The Possibility"><img src="assets/card-sun.svg" alt="The Sun card"></div></div>
+<div class="meaning"><h3>The Sun</h3><span class="kw">Warmth · Clarity · Joy</span><p>A bright, honest card. It points to what feels energising and simple, and invites you to consider what you would do with a little more confidence.</p></div></div></div>
+    <div class="spread sp-b"><div class="slot-card"><div class="pos">Card I · The Present</div><p class="pos-q">What deserves your attention right now?</p>
+<div class="tcard"><div class="in"><img src="assets/card-back.svg" alt="Face-down card, The Present"><img src="assets/card-hermit.svg" alt="The Hermit card"></div></div>
+<div class="meaning"><h3>The Hermit</h3><span class="kw">Solitude · Insight · Guidance</span><p>The Hermit suggests stepping back to look inward. A quiet evening, a notebook or a calm conversation may help your own answers surface.</p></div></div><div class="slot-card"><div class="pos">Card II · The Hidden</div><p class="pos-q">What might be worth looking at more closely?</p>
+<div class="tcard"><div class="in"><img src="assets/card-back.svg" alt="Face-down card, The Hidden"><img src="assets/card-wheel.svg" alt="Wheel of Fortune card"></div></div>
+<div class="meaning"><h3>Wheel of Fortune</h3><span class="kw">Cycles · Change · Timing</span><p>Life moves in cycles. This card invites you to reflect on what is shifting and which parts of the turn are within your reach.</p></div></div><div class="slot-card"><div class="pos">Card III · The Possibility</div><p class="pos-q">What perspective could you explore next?</p>
+<div class="tcard"><div class="in"><img src="assets/card-back.svg" alt="Face-down card, The Possibility"><img src="assets/card-empress.svg" alt="The Empress card"></div></div>
+<div class="meaning"><h3>The Empress</h3><span class="kw">Nurture · Creativity · Abundance</span><p>A card of care and creative growth. Consider what deserves tending right now — in your projects, relationships or in yourself.</p></div></div></div>
+    <p class="state-msg ok" role="status">Your three-card spread is ready to explore.</p>
+    <div class="draw-ctrl">
+      <label for="da1" class="btn b b-ra no-arrow">Reveal My Cards</label>
+      <label for="db1" class="btn b b-rb no-arrow">Reveal My Cards</label>
+      <label for="db0" class="btn ghost b b-redraw-b no-arrow">Redraw</label>
+      <label for="da0" class="btn ghost b b-redraw-a no-arrow">Redraw</label>
+      <a class="btn b b-book" href="booking.html">Book This Hour</a>
+    </div>
+    <p class="sim">Demo mode: spreads are a simulation made of two prepared sets of cards. Redrawing never affects a confirmed booking.</p>
+  </div>
+</div>
+</div></section>
+
+</main>
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot">
+      <div>
+        <a class="logo" href="index.html"><img src="assets/logo.svg" alt=""><span>ASTRA</span></a>
+        <p>Tarot by Time. A quiet space to pause, draw three cards and reflect before your personal reading.</p>
+      </div>
+      <div><h4>Explore</h4><ul><li><a href="time-oracle.html">Time Oracle</a></li><li><a href="library.html">Tarot Library</a></li><li><a href="readings.html">Readings</a></li><li><a href="journal.html">Journal</a></li></ul></div>
+      <div><h4>Reader</h4><ul><li><a href="about.html">About the Reader</a></li><li><a href="booking.html">Book a Reading</a></li><li><a href="contact.html">Contact</a></li></ul></div>
+      <div><h4>Contact</h4><ul><li>[Your email]</li><li>[Your social handle]</li><li>[Your location]</li></ul></div>
+    </div>
+    <div class="legal"><span>© 2026 ASTRA — Tarot by Time · Demo project</span><span>Tarot is offered for reflection and entertainment, not as professional advice.</span></div>
+  </div>
+</footer>
+</body>
+</html>
